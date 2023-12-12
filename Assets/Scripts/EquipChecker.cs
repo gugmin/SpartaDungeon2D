@@ -15,6 +15,7 @@ public class EquipChecker : MonoBehaviour
     {
         GameObject gameObject = EventSystem.current.currentSelectedGameObject;
         PlayerPrefs.SetString(gameObject.name, gameObject.name);
+        Equipche();
     }
     public void Unequip()
     {
@@ -23,6 +24,7 @@ public class EquipChecker : MonoBehaviour
         {
             PlayerPrefs.DeleteKey(gameObject.name);
         }
+        Equipche();
     }
 
     public void Equipche()
