@@ -1243,6 +1243,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   epSign: []
+  status: {fileID: 0}
+  manPowerTxt: {fileID: 0}
+  improvisationTxt: {fileID: 0}
+  healthTxt: {fileID: 0}
+  speechTxt: {fileID: 0}
 --- !u!1 &356488966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1707,11 @@ MonoBehaviour:
   - {fileID: 520524085}
   - {fileID: 1445107325}
   - {fileID: 827769164}
+  status: {fileID: 1626887643}
+  manPowerTxt: {fileID: 802732343}
+  improvisationTxt: {fileID: 995481037}
+  healthTxt: {fileID: 1577073730}
+  speechTxt: {fileID: 2077279831}
 --- !u!1 &477814820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,7 +4513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inventory  11 / 120
+  m_text: Inventory  5 / 9
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2fb55f2b208e11b4b89620b523a30c7f, type: 2}
   m_sharedMaterial: {fileID: -8331223235122669178, guid: 2fb55f2b208e11b4b89620b523a30c7f, type: 2}
@@ -6991,6 +7001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1626887642}
+  - component: {fileID: 1626887643}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -7014,6 +7025,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626887643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626887641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919fd2f7791b6e34db70be42f883adf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: "\uC885\uB188"
+  Job: "\uC0C1\uBA38\uC2B4"
+  Level: 10
+  Gold: 20000
+  Exp: 0
+  MaxExp: 0
+  manPower: 35
+  improvisation: 40
+  health: 100
+  speech: 25
 --- !u!1 &1654030237
 GameObject:
   m_ObjectHideFlags: 0
