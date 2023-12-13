@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04d4b093a3df3c438154c1f4f0d037b, type: 3}
   m_Name: Item_mic
   m_EditorClassIdentifier: 
-  type: 1
   itemImage: {fileID: 21300000, guid: 47f3f6d33a0cc544ca5364f0d6c39d45, type: 3}
   Name: "\uB9C8\uC774\uD06C"
   info: "\uC74C\uC9C8\uC774 \uC88B\uB2E4"
@@ -23,4 +22,3 @@ MonoBehaviour:
   statName: "\uD654\uC220"
   itemStatImage: {fileID: 1304880228, guid: f9ced22fd7c6d9f4bbfdeda064762a2d, type: 3}
   IsEquip: 0
-  equipSign: '[E]'

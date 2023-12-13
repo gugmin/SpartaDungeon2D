@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class StatusSO : MonoBehaviour
+public class Status : MonoBehaviour
 {
     public string Id;
     public string Job;

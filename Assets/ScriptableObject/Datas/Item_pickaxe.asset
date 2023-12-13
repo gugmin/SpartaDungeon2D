@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04d4b093a3df3c438154c1f4f0d037b, type: 3}
   m_Name: Item_pickaxe
   m_EditorClassIdentifier: 
-  type: 0
   itemImage: {fileID: 21300000, guid: bf7ca762eb9d1c04ca5325b4ad449bbe, type: 3}
   Name: "\uACE1\uAD2D\uC774"
   info: "\uB3CC\uC744 \uB354 \uC798 \uCE94\uB2E4."
@@ -23,4 +22,3 @@ MonoBehaviour:
   statName: "\uB178\uB3D9\uB825"
   itemStatImage: {fileID: -1818139884, guid: f9ced22fd7c6d9f4bbfdeda064762a2d, type: 3}
   IsEquip: 0
-  equipSign: '[E]'

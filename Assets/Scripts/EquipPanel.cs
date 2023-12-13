@@ -9,9 +9,9 @@ using static UnityEditor.Progress;
 
 public class EquipPanel : MonoBehaviour
 {
-    Items itema;
+    public Items itema;
     public Item _item;
-
+    public GameObject choiceItem;
     public GameObject itemPanel;
     public Image itemImage;
     public TMP_Text ItemName;
@@ -26,11 +26,11 @@ public class EquipPanel : MonoBehaviour
     {
         itemPanel.SetActive(true);
 
-        GameObject gameObject = EventSystem.current.currentSelectedGameObject;
+        choiceItem = EventSystem.current.currentSelectedGameObject;
 
         foreach (var item in _item.inven.items)
         {
-            if (gameObject.name == item.name)
+            if (choiceItem.name == item.name)
             {
                 itema = item;
             }

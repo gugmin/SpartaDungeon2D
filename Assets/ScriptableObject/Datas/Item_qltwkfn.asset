@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04d4b093a3df3c438154c1f4f0d037b, type: 3}
   m_Name: Item_qltwkfn
   m_EditorClassIdentifier: 
-  type: 0
   itemImage: {fileID: 21300000, guid: 79f9d7f182e94f845a5495fb594d24dd, type: 3}
   Name: "\uBE57\uC790\uB8E8"
   info: "\uB534\uCCAD\uD53C\uC6B8\uB54C \uC88B\uB2E4."
@@ -23,4 +22,3 @@ MonoBehaviour:
   statName: "\uC784\uAE30\uC751\uBCC0"
   itemStatImage: {fileID: -1957839622, guid: f9ced22fd7c6d9f4bbfdeda064762a2d, type: 3}
   IsEquip: 0
-  equipSign: '[E]'
