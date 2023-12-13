@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Items : MonoBehaviour
+public enum ItemType
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    None,
+    Weapon,
+    Armor
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[CreateAssetMenu(fileName = "Item", menuName = "Items/Default", order = 0)]
+public class Items : ScriptableObject
+{
+    public ItemType type = 0;
+    public Sprite itemImage;
+    public string Name;
+    public string info;
+    public int itemManpower;
+    public int itemImprovisation;
+    public int itemHealth;
+    public int itemSpeech;
+    public string statName;
+    public Sprite itemStatImage;
+    public bool IsEquip = false;
 }

@@ -1,46 +1,38 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEditor.Progress;
 
 public class EquipChecker : MonoBehaviour
 {
-    public GameObject[] EquipCheck;
-    public string[] Items;
-
-    private void Awake()
-    {
-        Equipche();
-    }
-
+    Inven Inven;
+    public TMP_Text[] epSign;
     public void Equip()
     {
-        GameObject gameObject = EventSystem.current.currentSelectedGameObject;
-        PlayerPrefs.SetString(gameObject.name, gameObject.name);
-        Equipche();
-    }
-    public void Unequip()
-    {
-        GameObject gameObject = EventSystem.current.currentSelectedGameObject;
-        if (PlayerPrefs.HasKey(gameObject.name))
+        for (int i = 0; i < Inven.items.Count; i++)
         {
-            PlayerPrefs.DeleteKey(gameObject.name);
+            if (Inven.items[i].IsEquip == false)
+            {
+                Inven.items[i].IsEquip = true;
+                epSign[i].text = "[E]";
+            }
+            else { print("이미 장착중입니다."); }
         }
-        Equipche();
     }
 
-    public void Equipche()
+    public void Unequip()
     {
-        for (int i = 0; i < Items.Length; i++)
+        for (int i = 0; i < Inven.items.Count; i++)
         {
-            if (PlayerPrefs.HasKey(Items[i]))
+            if (Inven.items[i].IsEquip == true)
             {
-                EquipCheck[i].SetActive(true);
+                Inven.items[i].IsEquip = false;
+                epSign[i].text = " ";
             }
-            else
-            {
-                EquipCheck[i].SetActive(false);
-            }
+            else { print("장착하지 않았습니다."); }
         }
     }
-    
+
+
 
 }
